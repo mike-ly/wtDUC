@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Icon } from 'react-native-elements';
 
 export default class HomeScreen extends React.Component {
+
+	static navigationOptions = {
+    	tabBarLabel: 'Home',
+    	// Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    	tabBarIcon: ({ tintColor, iconStyle }) => (
+      		<Icon color={tintColor} iconStyle={iconStyle} size={36} name='today' />
+    	),
+  	};
+
     render() {
         return (
             <View style={styles.container}>

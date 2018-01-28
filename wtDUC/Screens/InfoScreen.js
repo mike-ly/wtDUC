@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Icon } from 'react-native-elements';
 
-export default class ProfileScreen extends React.Component {
+export default class InfoScreen extends React.Component {
 
-    static navigationOptions = {
-        tabBarLabel: 'Profile',
-        // Note: By default the icon is only shown on iOS. Search the showIcon option below.
-        tabBarIcon: ({ tintColor, iconStyle }) => (
-            <Icon color={tintColor} iconStyle={iconStyle} size={36} name='person' />
-        ),
-    };
+	static navigationOptions = {
+    	tabBarLabel: 'Info',
+    	// Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    	tabBarIcon: ({ tintColor, iconStyle }) => (
+      		<Icon color={tintColor} iconStyle={iconStyle} size={36} name='info' type="feather" />
+    	),
+  	};
 
     render() {
         return (
