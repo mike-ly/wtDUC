@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Icon } from 'react-native-elements';
+import mainStyle from '../mainStyle';
 
 export default class HomeScreen extends React.Component {
 
@@ -14,7 +15,10 @@ export default class HomeScreen extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
+            <View style={mainStyle.container}>
+            	<View style={mainStyle.fullWidthContainer}>
+            		<View style={mainStyle.topBar}></View>
+            	</View>
                 <Text>Open up App.js to start working on your app!</Text>
                 <Text>Changes you make willcally reload.</Text>
                 <Text>Shake your phone to open the developer menu.</Text>
@@ -22,15 +26,3 @@ export default class HomeScreen extends React.Component {
         );
     }
 }
-
-const styles = StyleSheet.create({
-
-    //Emory Blue: #002878
-
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-});

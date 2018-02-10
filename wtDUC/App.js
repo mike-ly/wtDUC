@@ -22,14 +22,12 @@ const App = TabNavigator({
     }
 }, {
     tabBarPosition: 'bottom',
-        swipeEnabled: true,
-        animationEnabled: true,
         tabBarOptions: {
             activeTintColor: '#002878',
             inactiveTintColor: '#9e9e9e',
             showLabel: false,
             style: { 
-                backgroundColor: 'transparent',
+                backgroundColor: '#fafafa',
                 height: 60,
                 alignItems: 'center',
                 borderTopWidth: 0,
