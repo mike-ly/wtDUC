@@ -17,7 +17,9 @@ export default class HomeScreen extends React.Component {
         return (
             <View style={mainStyle.container}>
             	<View style={mainStyle.fullWidthContainer}>
-            		<View style={mainStyle.topBar}></View>
+            		<View style={mainStyle.topBar}>
+            			<Text>Today</Text>
+            		</View>
             	</View>
                 <Text>Open up App.js to start working on your app!</Text>
                 <Text>Changes you make willcally reload.</Text>

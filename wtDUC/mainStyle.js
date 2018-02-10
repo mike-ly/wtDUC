@@ -20,9 +20,23 @@ export default StyleSheet.create({
 
     topBar: {
     	flex: 1,
-    	height: 50,
+    	height: 70,
     	backgroundColor: '#002878',
-    }
+    	paddingTop: 20,
+    	flexDirection: 'row',	
+    },
 
+    topBarLeft: {
+    	flex: 1,
+    },
+
+    topBarCenter: {
+    	flex: 3,
+    },
+
+    topBarRight: {
+    	flex: 1,
+    }
+    
     // HOME SCREEN
 });
