@@ -18,12 +18,10 @@ export default class HomeScreen extends React.Component {
             <View style={mainStyle.container}>
             	<View style={mainStyle.fullWidthContainer}>
             		<View style={mainStyle.topBar}>
-            			<Text>Today</Text>
+            			<Text style={mainStyle.navHeader}>Today</Text>
             		</View>
             	</View>
-                <Text>Open up App.js to start working on your app!</Text>
-                <Text>Changes you make willcally reload.</Text>
-                <Text>Shake your phone to open the developer menu.</Text>
+             
             </View>
         );
     }

@@ -21,9 +21,12 @@ export default StyleSheet.create({
     topBar: {
     	flex: 1,
     	height: 70,
-    	backgroundColor: '#002878',
+    	backgroundColor: '#d2b000',
     	paddingTop: 20,
     	flexDirection: 'row',	
+    },
+    navHeader: {
+        textAlign: 'center',
     },
 
     topBarLeft: {

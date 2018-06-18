@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Icon } from 'react-native-elements';
+import mainStyle from '../mainStyle';
 
 export default class InfoScreen extends React.Component {
 
@@ -14,10 +15,12 @@ export default class InfoScreen extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Text>Open up App.js to start working on your app!</Text>
-                <Text>Changes you make willcally reload.</Text>
-                <Text>Shake your phone to open the developer menu.</Text>
+            <View style={mainStyle.container}>
+                <View style={mainStyle.fullWidthContainer}>
+                    <View style={mainStyle.topBar}>
+                        <Text style={mainStyle.navHeader}>Today</Text>
+                    </View>
+                </View>
             </View>
         );
     }
